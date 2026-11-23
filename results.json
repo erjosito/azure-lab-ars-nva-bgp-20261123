@@ -41,9 +41,9 @@
   "nativeAndBirdCrossChecksPassed": true,
   "originalArsFlagsRestored": true,
   "cleanup": {
-    "verified": false,
-    "resourceGroupAbsent": false,
-    "remainingCorrelationTaggedResources": null
+    "verified": true,
+    "resourceGroupAbsent": true,
+    "remainingCorrelationTaggedResources": 0
   },
   "notAssessed": [
     "packet delivery",

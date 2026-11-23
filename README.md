@@ -27,7 +27,7 @@ With both ARS flags explicitly enabled, the revised four-scenario suite passed: 
 
 West/shared and east/shared have bidirectional VNet peerings: VNet access and forwarded traffic enabled; gateway transit and use-remote-gateways disabled. There is no direct west/east peering, inter-ARS BGP transit, VPN gateway, ExpressRoute circuit or native route map.
 
-Billable scope: 3 VNets, 5 subnets, 2 Standard Route Servers, 3 `Standard_B2ts_v2` VMs, 3 NICs, 3 NSGs, 3 30-GB StandardSSD OS disks and 5 Standard public IPs. Public SSH/RDP was denied; management used Run Command. Subscription-policy-created Defender extensions on the task VMs were also present. Full account-effective cost was not verified; this is not a pricing estimate.
+Approved scope: 3 VNets, 5 subnets, 2 Standard Route Servers, 3 `Standard_B2ts_v2` VMs, 3 NICs, 3 NSGs, 3 30-GB StandardSSD OS disks and 5 Standard public IPs. Public SSH/RDP was denied; management used Run Command. Subscription-policy-created Defender extensions on the task VMs were also present. Cleanup discovered three additional subnet NSGs with the exact task ownership tags; deletion was initially blocked until their exclusive attachments to the three task NVA subnets were verified. Full account-effective cost was not verified; this is not a pricing estimate.
 
 ## Observed adjacency matrix
 
@@ -129,7 +129,9 @@ Portal screenshots were not captured; CLI/BIRD outputs are the authoritative obs
 
 ## Cleanup
 
-Final owned-resource deletion and absence verification are recorded in `results.json`. Only the creation-proven task group, its resources and policy-created child extensions on task VMs are in scope. Pre-existing, shared and customer resources are excluded. Historical preflight deletion is not counted as cleanup of this deployed run.
+**Cleanup is verified:** the exact creation-proven task resource group is absent, and the explicit subscription contains zero resources with this run's correlation tag. The final inventory contained 28 resources, including the three verified task-tagged subnet NSGs and Defender extensions on task VMs; their group and children were deleted.
+
+Only the creation-proven task group and its resources were in scope. Pre-existing, shared and customer resources were excluded. Historical preflight deletion is not counted as cleanup of this deployed run. `results.json` records final absence verification.
 
 ## References
 
