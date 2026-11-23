@@ -1,0 +1,57 @@
+{
+  "originalReceiverBaseline": {
+    "passed": false,
+    "establishedSessions": 8,
+    "labPrefixesPerReceiverNeighbor": 0
+  },
+  "westOnlyB2bDiagnostic": {
+    "observed": true,
+    "westLabPrefixesPerNeighbor": 2,
+    "eastLabPrefixesPerNeighbor": 0,
+    "restored": true
+  },
+  "revisedConfiguration": {
+    "westB2b": true,
+    "eastB2b": true,
+    "gatewayTransit": false,
+    "useRemoteGateways": false
+  },
+  "revisedScenarios": [
+    {
+      "passed": true,
+      "sessions": 8,
+      "scenario": "endpoint-baseline"
+    },
+    {
+      "passed": true,
+      "scenario": "duplicate-prefix-provenance",
+      "receiverEndpoints": 4
+    },
+    {
+      "passed": true,
+      "filterLocation": "BIRD source export, not an ARS route map",
+      "scenario": "bounded-export-filter"
+    },
+    {
+      "zeroScope": "West lab prefixes only; native VNet advertisements remain",
+      "passed": true,
+      "scenario": "withdraw-and-restore"
+    }
+  ],
+  "nativeAndBirdCrossChecksPassed": true,
+  "originalArsFlagsRestored": true,
+  "cleanup": {
+    "verified": false,
+    "resourceGroupAbsent": false,
+    "remainingCorrelationTaggedResources": null
+  },
+  "notAssessed": [
+    "packet delivery",
+    "ECMP",
+    "elapsed convergence",
+    "same-VNet NVA reflection",
+    "native route maps",
+    "ER/MSEE identity",
+    "independent ER withdrawal"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "RouteServiceRole_IN_0": [
+    {
+      "asPath": "65020",
+      "localAddress": "10.71.0.5",
+      "network": "10.202.0.0/24",
+      "nextHop": "10.71.1.4",
+      "origin": "EBgp",
+      "sourcePeer": "10.71.1.4",
+      "weight": 32768
+    },
+    {
+      "asPath": "65020",
+      "localAddress": "10.71.0.5",
+      "network": "10.200.0.0/24",
+      "nextHop": "10.71.1.4",
+      "origin": "EBgp",
+      "sourcePeer": "10.71.1.4",
+      "weight": 32768
+    }
+  ],
+  "RouteServiceRole_IN_1": [
+    {
+      "asPath": "65020",
+      "localAddress": "10.71.0.4",
+      "network": "10.202.0.0/24",
+      "nextHop": "10.71.1.4",
+      "origin": "EBgp",
+      "sourcePeer": "10.71.1.4",
+      "weight": 32768
+    },
+    {
+      "asPath": "65020",
+      "localAddress": "10.71.0.4",
+      "network": "10.200.0.0/24",
+      "nextHop": "10.71.1.4",
+      "origin": "EBgp",
+      "sourcePeer": "10.71.1.4",
+      "weight": 32768
+    }
+  ]
+}

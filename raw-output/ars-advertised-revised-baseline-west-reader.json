@@ -1,0 +1,54 @@
+{
+  "RouteServiceRole_IN_0": [
+    {
+      "asPath": "65515",
+      "localAddress": "10.70.0.5",
+      "network": "10.70.0.0/16",
+      "nextHop": "10.70.0.5",
+      "origin": "Igp",
+      "weight": 0
+    },
+    {
+      "asPath": "65515-65010",
+      "localAddress": "10.70.0.5",
+      "network": "10.200.0.0/24",
+      "nextHop": "10.70.0.5",
+      "origin": "Igp",
+      "weight": 0
+    },
+    {
+      "asPath": "65515-65010",
+      "localAddress": "10.70.0.5",
+      "network": "10.201.0.0/24",
+      "nextHop": "10.70.0.5",
+      "origin": "Igp",
+      "weight": 0
+    }
+  ],
+  "RouteServiceRole_IN_1": [
+    {
+      "asPath": "65515",
+      "localAddress": "10.70.0.4",
+      "network": "10.70.0.0/16",
+      "nextHop": "10.70.0.4",
+      "origin": "Igp",
+      "weight": 0
+    },
+    {
+      "asPath": "65515-65010",
+      "localAddress": "10.70.0.4",
+      "network": "10.200.0.0/24",
+      "nextHop": "10.70.0.4",
+      "origin": "Igp",
+      "weight": 0
+    },
+    {
+      "asPath": "65515-65010",
+      "localAddress": "10.70.0.4",
+      "network": "10.201.0.0/24",
+      "nextHop": "10.70.0.4",
+      "origin": "Igp",
+      "weight": 0
+    }
+  ]
+}

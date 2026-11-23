@@ -1,0 +1,43 @@
+{
+  "captureArtifactWrittenAt": "2026-11-23T22:05:12.269773+00:00",
+  "scope": {
+    "localNva": "east",
+    "phase": "revised-filtered"
+  },
+  "neighbors": [
+    {
+      "name": "east_0",
+      "peerIp": "10.71.0.5",
+      "peerAsn": 65515,
+      "localIp": "10.71.1.4",
+      "localAsn": 65020,
+      "state": "Established",
+      "established": true,
+      "routes": [
+        {
+          "prefix": "10.71.0.0/16",
+          "selected": false,
+          "asPath": "65515",
+          "nextHop": "10.71.0.5"
+        }
+      ]
+    },
+    {
+      "name": "east_1",
+      "peerIp": "10.71.0.4",
+      "peerAsn": 65515,
+      "localIp": "10.71.1.4",
+      "localAsn": 65020,
+      "state": "Established",
+      "established": true,
+      "routes": [
+        {
+          "prefix": "10.71.0.0/16",
+          "selected": true,
+          "asPath": "65515",
+          "nextHop": "10.71.0.4"
+        }
+      ]
+    }
+  ]
+}
